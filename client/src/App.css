@@ -1,0 +1,88 @@
+/* --- APP.CSS - OPTION 3: GLASSMORPHISM (Corrected Layout) --- */
+
+/* 1. CRUCIAL FIX: Ensure parent elements span full width for centering */
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  /* Use a visible background for the blur effect */
+  background: radial-gradient(circle at top right, #ADD8E6, #D3D3D3); 
+}
+
+/* Container */
+.container {
+  max-width: 900px; /* Define max width */
+  
+  /* CRITICAL FIX: Center the container block */
+  margin: 40px auto; 
+  padding: 40px 20px; 
+
+  /* Glassmorphism Visuals */
+  background: rgba(255, 255, 255, 0.2); 
+  backdrop-filter: blur(10px); 
+  border: 1px solid rgba(255, 255, 255, 0.3); 
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.15); 
+  border-radius: 16px; 
+  
+  font-family: 'Poppins', sans-serif; /* Keep your preferred font */
+}
+
+/* Button */
+button {
+  background: rgba(255, 255, 255, 0.7); 
+  color: #10408C; 
+  border: 1px solid #10408C;
+  font-weight: bold;
+}
+button:hover:not(:disabled) {
+    background: white; 
+}
+
+/* Report Section */
+.report-section {
+  /* This needs a slight blur to show the background gradient */
+  background: rgba(255, 255, 255, 0.6); 
+  backdrop-filter: blur(5px);
+  border-radius: 12px;
+}
+
+/* ... (Ensure you also include the necessary centering and styling for .upload-section) ... */
+/* --- NEW STYLES FOR PROGRESS INDICATOR --- */
+
+/* Define the container for the progress bar and text */
+/* --- THREE-DOT LOADER STYLES --- */
+
+/* --- BRACKET LOADER STYLES --- */
+
+/* --- NEW STYLES FOR PROGRESS INDICATOR --- */
+
+.progress-section {
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 30px;
+    background-color: #f7f9fd; /* Light blue background for the progress area */
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+}
+
+.spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-left-color: #007bff; /* Primary blue color */
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite; /* Starts the rotation */
+    margin: 0 auto 15px auto; /* Center spinner and add margin */
+}
+
+.status-text {
+    font-weight: 600;
+    color: #007bff;
+}
+
+/* Define the animation sequence */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
