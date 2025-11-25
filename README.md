@@ -1,11 +1,16 @@
-# code-review-assistant
+NOTE: create a .env file and paste gemini key
+GEMINI_API_KEY=PASTE_YOUR_GEMINI_API_KEY_HERE
+
 This project focuses on building a seamless system that uses a large language model (LLM) to analyze source code and provide immediate, actionable feedback.
 
 
 Objective: To automate the analysis of code structure, readability, and adherence to best practices.
 
-Core Functionality:
+LLM Prompt Documentation
 
+1. System Prompt (Role Definition) : "You are a Senior Code Reviewer. Review this code for readability, modularity, and potential bugs, then provide improvement suggestions. Format the response strictly using Markdown."
+
+Core Functionality:
 
 Input: User uploads a source code file  
 
