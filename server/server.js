@@ -35,7 +35,7 @@ const Report = mongoose.model('Report', ReportSchema);
 const upload = multer({ dest: 'uploads/' });
 
 const genai = new GoogleGenAI({ 
-    apiKey: "AIzaSyDytVSITIqWSdV4S7n2WMsMztjexMMZU9Q"
+    apiKey: process.env.GEMINI_API_KEY
 });
 
 /**
