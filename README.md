@@ -4,8 +4,14 @@ This project focuses on building a seamless system that uses a large language mo
 
 Objective: To automate the analysis of code structure, readability, and adherence to best practices.
 
-Core Functionality:
+LLM Prompt Documentation
 
+1. System Prompt (Role Definition) : "You are a Senior Code Reviewer. Review this code for readability, modularity, and potential bugs, then provide improvement suggestions. Format the response strictly using Markdown."
+
+2. User Prompt (Code Injection) : `Code to review (File: ${filename}):\n${fileContent}`
+
+
+Core Functionality:
 
 Input: User uploads a source code file  
 
