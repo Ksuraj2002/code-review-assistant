@@ -22,7 +22,6 @@ mongoose.connect(process.env.MONGO_URI || 'mongodb://127.0.0.1:27017/code-review
 // Define the Schema 
 const ReportSchema = new mongoose.Schema({
     filename: String,
-    codeContent: String, 
     aiReview: String,
     createdAt: { type: Date, default: Date.now }
 });
@@ -72,7 +71,6 @@ app.post('/review', upload.single('codeFile'), async (req, res) => {
         // Instantiation must happen here, after variables are defined
         const newReport = new Report({
             filename: filename,
-            codeContent: fileContent, // Storing the actual code
             aiReview: reviewReport 
         });
 
