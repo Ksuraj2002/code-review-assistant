@@ -1,4 +1,6 @@
-# code-review-assistant
+NOTE: create a .env file and paste gemini key
+GEMINI_API_KEY=PASTE_YOUR_GEMINI_API_KEY_HERE
+
 This project focuses on building a seamless system that uses a large language model (LLM) to analyze source code and provide immediate, actionable feedback.
 
 
